@@ -1,0 +1,32 @@
+h1{
+    background-color: #B3B3B3;
+    padding: 15px;
+}
+p{
+    background-color: #CCCCCC;
+    padding: 15px;
+}
+div{
+    background-color: #FAFF95;
+    padding: 15px;
+}
+div p{
+    background-color: #FAFF95;
+    display:none;
+    padding: 0;
+}
+@media only screen and (max-width: 480px){
+    div p:nth-child(3){
+        display:block;
+    }
+}
+@media only screen and (min-width:481px) and (max-width: 1023px){
+    div p:nth-child(2){
+        display:block;
+    }
+}
+@media only screen and (min-width: 1024px){
+    div p:nth-child(1){
+        display:block;
+    }
+}
